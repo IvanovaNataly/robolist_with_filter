@@ -15,10 +15,6 @@ export default class List extends Component {
             .then((data) => { this.setState({data: data,
                                             filteredData: data}) })
     }
-
-    // shouldComponentUpdate() {
-    //     return false;
-    // }
  
     setUserChosen(chosenId) {
         let chosenUser = this.state.data.find( function(element) {
